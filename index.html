@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <p class="title">Student Portal</p>
+    </header>
+    <main class="mainSection">
+      <div class="searchContainer">
+        <input type="text" class="input" id="search" placeholder="Search" />
+        <button class="button" id="searchBtn">Search</button>
+      </div>
+      <div class="buttonContainer">
+        <button class="button" id="a2z">Sort A → Z</button>
+        <button class="button" id="z2a">Sort Z → A</button>
+        <button class="button" id="marksBtn">Sort By Marks</button>
+        <button class="button" id="passBtn">Sort By Passing</button>
+        <button class="button" id="classBtn">Sort By Class</button>
+        <button class="button" id="genderBtn">Sort By Gender</button>
+      </div>
+      <table class="tableContainer">
+        <thead class="tableHeader">
+          <th class="tableHeading tableId">ID</th>
+          <th class="tableHeading">Name</th>
+          <th class="tableHeading">Gender</th>
+          <th class="tableHeading">Class</th>
+          <th class="tableHeading">Marks</th>
+          <th class="tableHeading">Passing</th>
+          <th class="tableHeading">Email</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <table id="femaleTable" class="tableContainer">
+        <thead class="tableHeader">
+          <th class="tableHeading tableId">ID</th>
+          <th class="tableHeading">Name</th>
+          <th class="tableHeading">Gender</th>
+          <th class="tableHeading">Class</th>
+          <th class="tableHeading">Marks</th>
+          <th class="tableHeading">Passing</th>
+          <th class="tableHeading">Email</th>
+        </thead>
+        <tbody id="femaleTableBody"></tbody>
+      </table>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
